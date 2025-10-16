@@ -31,22 +31,23 @@ class CardContact extends LitElement{
         ${this.user === 0
           ? html `<p class="card-text text-muted">No users available.</p>`
           : html `
-            <table class="table">
-              <tbody>
-                <tr>
-                  <th scope="row">Cell</th>
-                  <td class="fs-6">${cell}</td>
-                </tr>
-                <tr>
-                  <th scope="row">Phone</th>
-                  <td class="fs-6">${phone}</td>
-                </tr>
-                <tr>
-                  <th scope="row">Email</th>
-                  <td class="fs-6 text-wrap">${email || `<span class="placeholder placeholder-glow col-6"></span>`}</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="row">
+              <div class="row py-1">
+                <div class="col-lg-12 fw-bold">Cell</div>
+                <div class="col-lg-12">${cell}</div>
+              </div>
+              <div class="row py-1">
+                <div class="col-lg-12 fw-bold">Phone</div>
+                <div class="col-lg-12">${phone}</div>
+              </div>
+              <div class="row py-1">
+                <div class="col-lg-12 fw-bold">Email</div>
+                <div class="col-lg-12 text-wrap">
+                  ${email || `<span class="placeholder placeholder-glow col-6"></span>`}
+                </div>
+              </div>
+            </div>
+
           `
         }
       </div>

@@ -47,19 +47,19 @@ class App extends LitElement {
       </header>
       <main class="container py-3 py-md-5" .user="${this.user}">
         <div class="card p-0 shadow" id="card-container">
-          <div class="card-header d-flex justify-content-center">
+          <div class="card-header position-relative">
             <img 
-              class="rounded-circle" 
+              class="img-fluid rounded-circle position-absolute top-100 start-50 translate-middle" 
               src="${this.user?.picture?.large}" 
               alt="foto profil ${this.user?.name?.first}" 
             />
           </div>
           <div class="card-body container p-3 p-md-5">
             <div class="row g-2 g-md-3">
-              <card-about class="col-12 col-md-8 order-lg-1" .user="${this.user}"></card-about>
-              <div class="col-12 col-md-4 d-flex flex-lg-column gap-2 gap-md-3">
-                <card-profile class=" order-lg-0" .user="${this.user}"></card-profile>
-                <card-contact class=" order-lg-2" .user="${this.user}"></card-contact>
+              <card-about class="col-12  col-lg-8 order-lg-1" .user="${this.user}"></card-about>
+              <div class="col-12 col-md-12  col-lg-4 d-flex flex-column flex-md-row flex-lg-column gap-2 gap-md-3">
+                <card-profile class="col-12 col-md-6 col-lg-12  order-lg-0" .user="${this.user}"></card-profile>
+                <card-contact class="col-12 col-md-6 col-lg-12  order-lg-2" .user="${this.user}"></card-contact>
               </div>
              </div>
           </div>

@@ -59,30 +59,33 @@ class CardProfile extends LitElement {
           ${this.user === 0
             ? html `<p class="card-text text-muted">No users available.</p>`
             : html `
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th scope="row">Name</th>
-                    <td class="fs-6">${name}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Gender</th>
-                    <td class="fs-6">${gender}</td>
-                  </tr>
-                <tr>
-                    <th scope="row">Date of Birth</th>
-                    <td class="fs-6">${this._formatedDate(dob)}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Address</th>
-                    <td class="fs-6">${address}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Nationality</th>
-                    <td class="fs-6">${nat}</td>
-                  </tr>
-                </tbody>
-              </table>`
+              <div class="row">
+                <div class="row py-2">
+                  <div class="col-xl-4 col-md-12 fw-bold">Name</div>
+                  <div class="col-xl-8 col-md-12">${name}</div>
+                </div>
+
+                <div class="row py-2">
+                  <div class="col-xl-4 col-md-12 fw-bold">Gender</div>
+                  <div class="col-xl-8 col-md-12">${gender}</div>
+                </div>
+
+                <div class="row py-2">
+                  <div class="col-xl-4 col-md-12 fw-bold">Date of Birth</div>
+                  <div class="col-xl-8 col-md-12">${this._formatedDate(dob)}</div>
+                </div>
+
+                <div class="row py-2">
+                  <div class="col-xl-4 col-md-12 fw-bold">Address</div>
+                  <div class="col-xl-8 col-md-12">${address}</div>
+                </div>
+
+                <div class="row py-2">
+                  <div class="col-xl-4 col-md-12 fw-bold">Nationality</div>
+                  <div class="col-xl-8 col-md-12">${nat}</div>
+                </div>
+              </div>
+            `
           }
         </div}
        
