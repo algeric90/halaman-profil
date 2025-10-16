@@ -56,10 +56,10 @@ class App extends LitElement {
           </div>
           <div class="card-body container p-3 p-md-5">
             <div class="row g-2 g-md-3">
-              <card-about class="col-12 col-md-8 order-md-1" .user="${this.user}"></card-about>
-              <div class="col-12 col-md-4 d-flex flex-column gap-2 gap-md-3">
-                <card-profile class=" order-md-0" .user="${this.user}"></card-profile>
-                <card-contact class=" order-md-2" .user="${this.user}"></card-contact>
+              <card-about class="col-12 col-md-8 order-lg-1" .user="${this.user}"></card-about>
+              <div class="col-12 col-md-4 d-flex flex-lg-column gap-2 gap-md-3">
+                <card-profile class=" order-lg-0" .user="${this.user}"></card-profile>
+                <card-contact class=" order-lg-2" .user="${this.user}"></card-contact>
               </div>
              </div>
           </div>
