@@ -76,7 +76,10 @@ module.exports = {
       inject: true,
       mode: 'auto',
       devMode: 'webapp',
+      publicPath: '/halaman-profil/',
+      outputPath: 'assets/', // semua favicon + manifest ke dist/assets/
     }),
+
 
     new CleanWebpackPlugin(),
   ],
