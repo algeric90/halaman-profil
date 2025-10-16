@@ -1,0 +1,35 @@
+// Functions Bootstrap
+@import '~bootstrap/scss/functions';
+
+// Variables Bootstrap
+@import '~bootstrap/scss/variables';
+
+// Konfigurasi Bootstrap
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/reboot';
+
+// Layouts dan components
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/helpers';
+
+// Komponen-Komponen
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/offcanvas';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/dropdown';
+@import '~bootstrap/scss/forms';
+
+
+// Utilities API untuk menghasilkan utility classes
+@import '~bootstrap/scss/utilities/api';
