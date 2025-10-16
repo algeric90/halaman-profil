@@ -33,16 +33,16 @@ class CardContact extends LitElement{
           : html `
             <div class="row">
               <div class="row py-1">
-                <div class="col-lg-12 fw-bold">Cell</div>
-                <div class="col-lg-12">${cell}</div>
+                <div class="col-xl-4 col-lg-12 fw-bold">Cell</div>
+                <div class="col-xl-8 col-lg-12">${cell}</div>
               </div>
               <div class="row py-1">
-                <div class="col-lg-12 fw-bold">Phone</div>
-                <div class="col-lg-12">${phone}</div>
+                <div class="col-xl-4 col-lg-12 fw-bold">Phone</div>
+                <div class="col-xl-8 col-lg-12">${phone}</div>
               </div>
               <div class="row py-1">
-                <div class="col-lg-12 fw-bold">Email</div>
-                <div class="col-lg-12 text-wrap">
+                <div class="col-xl-4 col-lg-12 fw-bold">Email</div>
+                <div class="col-xl-8 col-lg-12 text-wrap">
                   ${email || `<span class="placeholder placeholder-glow col-6"></span>`}
                 </div>
               </div>
