@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -11,6 +10,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: 'halaman-profil',
     clean: true,
   },
   module: {
@@ -68,17 +68,6 @@ module.exports = {
         },
       ],
     }),
-
-    new FaviconsWebpackPlugin({
-      logo: path.resolve(__dirname, 'src/public/img/logo.png'),
-      cache: true,
-      inject: true,
-      mode: 'auto',
-      devMode: 'webapp',
-      publicPath: '/halaman-profil/',
-      outputPath: 'assets/', // semua favicon + manifest ke dist/assets/
-    }),
-
 
     new CleanWebpackPlugin(),
   ],
